@@ -1,26 +1,45 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "IRANSans-Bold";
-    src: url("../fonts/iransansXFaNum/IRANSansXFaNum-Bold.eot") format("embedded-opentype"), url("../fonts/iransansXFaNum/IRANSansXFaNum-Bold.woff") format("woff"), url("../fonts/iransansXFaNum/IRANSansXFaNum-Bold.ttf") format("truetype");
+    font-family: 'IRANSans-Bold';
+    src: url('../fonts/iransansXFaNum/IRANSansXFaNum-Bold.eot')
+            format('embedded-opentype'),
+        url('../fonts/iransansXFaNum/IRANSansXFaNum-Bold.woff') format('woff'),
+        url('../fonts/iransansXFaNum/IRANSansXFaNum-Bold.ttf')
+            format('truetype');
     font-style: normal;
 }
 
 @font-face {
-    font-family: "IRANSans-Medium";
-    src: url("../fonts/iransansXFaNum/IRANSansXFaNum-Medium.eot") format("embedded-opentype"), url("../fonts/iransansXFaNum/IRANSansXFaNum-Medium.woff") format("woff"), url("../fonts/iransansXFaNum/IRANSansXFaNum-Medium.ttf") format("truetype");
+    font-family: 'IRANSans-Medium';
+    src: url('../fonts/iransansXFaNum/IRANSansXFaNum-Medium.eot')
+            format('embedded-opentype'),
+        url('../fonts/iransansXFaNum/IRANSansXFaNum-Medium.woff') format('woff'),
+        url('../fonts/iransansXFaNum/IRANSansXFaNum-Medium.ttf')
+            format('truetype');
     font-style: normal;
 }
 
 @font-face {
-    font-family: "IRANSans-Regular";
-    src: url("../fonts/iransansXFaNum/IRANSansXFaNum-Regular.eot") format("embedded-opentype"), url("../fonts/iransansXFaNum/IRANSansXFaNum-Regular.woff") format("woff"), url("../fonts/iransansXFaNum/IRANSansXFaNum-Regular.ttf") format("truetype");
+    font-family: 'IRANSans-Regular';
+    src: url('../fonts/iransansXFaNum/IRANSansXFaNum-Regular.eot')
+            format('embedded-opentype'),
+        url('../fonts/iransansXFaNum/IRANSansXFaNum-Regular.woff')
+            format('woff'),
+        url('../fonts/iransansXFaNum/IRANSansXFaNum-Regular.ttf')
+            format('truetype');
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Nastaliq";
-    src: url("../fonts/Nastaliq.ttf");
+    font-family: 'Nastaliq';
+    src: url('../fonts/Nastaliq.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'b-nazanin';
+    src: url('../fonts/b-nazanin.ttf');
     font-style: normal;
 }
 
@@ -34,7 +53,7 @@
 body {
     overflow-x: hidden;
     direction: rtl;
-    background: #F9F8FC;
+    background: #f9f8fc;
 }
 
 a {
@@ -110,7 +129,7 @@ h6 {
 }
 
 .AZ-img-container::after {
-    content: "";
+    content: '';
     display: block;
 }
 
@@ -140,34 +159,34 @@ h6 {
     height: 100vh;
 }
 
-.AZ-page-container>.container {
+.AZ-page-container > .container {
     padding-bottom: 150px;
     background: #fff;
 }
 
 .AZ-section-title {
     font-size: 20px;
-    color: #123E44;
-    font-family: "IRANSans-Bold";
+    color: #123e44;
+    font-family: 'IRANSans-Bold';
     margin-bottom: 15px;
 }
 
 .AZ-section-text {
     font-size: 14px;
     color: #322450;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-primary-btn,
 .AZ-secondary-btn {
     font-size: 14px;
     color: #ffffff;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
     padding: 8px 20px;
     transition: all 0.2s linear;
     border-radius: 5px;
-    background: #643FAE;
-    border: 1.5px solid #643FAE;
+    background: #643fae;
+    border: 1.5px solid #643fae;
 }
 
 .AZ-primary-btn:hover,
@@ -178,27 +197,27 @@ h6 {
 .AZ-secondary-btn {
     background: transparent;
     color: #000000;
-    border: 1.5px solid #643FAE;
+    border: 1.5px solid #643fae;
 }
 
 .AZ-secondary-btn:hover {
     color: #fff;
-    background: #643FAE;
+    background: #643fae;
 }
 
 .saved-questions-btn {
-    border: 1.5px solid #EC930D;
-    color: #EC930D;
+    border: 1.5px solid #ec930d;
+    color: #ec930d;
 }
 
 .saved-questions-btn:hover {
     color: #fff;
-    background: #EC930D;
+    background: #ec930d;
 }
 
 .save-form-btn {
-    background: #4AB26D;
-    border: 1px solid #4AB26D;
+    background: #4ab26d;
+    border: 1px solid #4ab26d;
 }
 
 .save-form-btn:hover {
@@ -207,12 +226,12 @@ h6 {
 }
 
 .cancel-form-btn {
-    border: 1px solid #4AB26D;
+    border: 1px solid #4ab26d;
 }
 
 .cancel-form-btn:hover {
     color: #fff;
-    background: #4AB26D;
+    background: #4ab26d;
 }
 
 .back-btn {
@@ -221,7 +240,7 @@ h6 {
     left: 0;
     font-size: 18px;
     color: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     border: none;
     background: transparent;
 }
@@ -229,18 +248,18 @@ h6 {
 .page-header-title {
     font-size: 20px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     padding: 0 30px;
 }
 
 .AZ-radio-group-category label {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     padding: 5px 10px;
     border-radius: 10px;
-    border: 1px solid #7B7B7B;
-    background: #F7F5FC;
+    border: 1px solid #7b7b7b;
+    background: #f7f5fc;
     cursor: pointer;
 }
 
@@ -248,8 +267,8 @@ h6 {
     display: none;
 }
 
-.AZ-radio-group-category input:checked~label {
-    border: 2px solid #643FAE;
+.AZ-radio-group-category input:checked ~ label {
+    border: 2px solid #643fae;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -262,7 +281,7 @@ h6 {
 .AZ-field-group label {
     font-size: 12px;
     color: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     margin-bottom: 10px;
 }
 
@@ -273,8 +292,8 @@ h6 {
 .AZ-field-group input,
 .AZ-field-group textarea {
     font-size: 11px;
-    color: #7B7B7B;
-    font-family: "IRANSans-Regular";
+    color: #7b7b7b;
+    font-family: 'IRANSans-Regular';
     border-radius: 5px;
     border: 1px solid rgba(100, 63, 174, 0.16);
     padding: 10px;
@@ -284,7 +303,7 @@ h6 {
 
 .AZ-field-group input:focus,
 .AZ-field-group textarea:focus {
-    border: 1px solid #643FAE;
+    border: 1px solid #643fae;
 }
 
 .AZ-field-group input {
@@ -316,7 +335,7 @@ h6 {
 
 .group-field_inner span {
     font-size: 18px;
-    color: #643FAE;
+    color: #643fae;
     height: 100%;
     display: flex;
     align-items: center;
@@ -324,13 +343,13 @@ h6 {
 }
 
 .group-field_inner:focus-within {
-    border: 1px solid #643FAE;
+    border: 1px solid #643fae;
 }
 
 .AZ-radio-group label {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     position: relative;
     padding-right: 16px;
     cursor: pointer;
@@ -340,7 +359,7 @@ h6 {
 }
 
 .AZ-radio-group label::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     top: 50%;
@@ -356,8 +375,8 @@ h6 {
     display: none;
 }
 
-.AZ-radio-group input:checked~label::after {
-    background: #39A757;
+.AZ-radio-group input:checked ~ label::after {
+    background: #39a757;
 }
 
 .datepicker-container .datepicker-plot-area {
@@ -383,15 +402,21 @@ h6 {
     padding-bottom: 10px;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-navigator .pwt-btn-prev {
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-navigator
+    .pwt-btn-prev {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-navigator .pwt-btn-prev::after {
-    content: "\e92b";
-    font-family: "icomoon";
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-navigator
+    .pwt-btn-prev::after {
+    content: '\e92b';
+    font-family: 'icomoon';
     position: absolute;
     top: 0;
     left: 0;
@@ -400,15 +425,21 @@ h6 {
     font-size: 20px;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-navigator .pwt-btn-next {
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-navigator
+    .pwt-btn-next {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-navigator .pwt-btn-next::after {
-    content: "\e92a";
-    font-family: "icomoon";
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-navigator
+    .pwt-btn-next::after {
+    content: '\e92a';
+    font-family: 'icomoon';
     position: absolute;
     top: 0;
     left: 0;
@@ -417,10 +448,13 @@ h6 {
     font-size: 20px;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-navigator .pwt-btn-switch {
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-navigator
+    .pwt-btn-switch {
     text-align: center;
     font-size: 13px;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     color: #333333;
     width: -moz-fit-content;
     width: fit-content;
@@ -431,9 +465,12 @@ h6 {
     position: relative;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-navigator .pwt-btn-switch::after {
-    content: "\e929";
-    font-family: "icomoon";
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-navigator
+    .pwt-btn-switch::after {
+    content: '\e929';
+    font-family: 'icomoon';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -441,55 +478,98 @@ h6 {
     font-size: 16px;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .month-grid-box .header .header-row-cell {
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .month-grid-box
+    .header
+    .header-row-cell {
     font-size: 14px;
-    font-family: "IRANSans-Bold";
-    color: #9C9A9A;
+    font-family: 'IRANSans-Bold';
+    color: #9c9a9a;
     background: #f5f5f5;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .table-days .selected {
-    background: #643FAE;
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .table-days
+    .selected {
+    background: #643fae;
     border-radius: 50%;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .table-days .selected span {
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .table-days
+    .selected
+    span {
     text-shadow: unset !important;
-    color: #FFFFFF !important;
+    color: #ffffff !important;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .table-days .today {
-    background: #6A4BA7;
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .table-days
+    .today {
+    background: #6a4ba7;
     border-radius: 50%;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .table-days .today span {
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .table-days
+    .today
+    span {
     text-shadow: unset !important;
-    color: #FFFFFF !important;
+    color: #ffffff !important;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .table-days .today::after {
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .table-days
+    .today::after {
     content: unset;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .table-days .today::before {
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .table-days
+    .today::before {
     content: unset;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .table-days span {
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .table-days
+    span {
     font-size: 14px;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     color: #666666;
     background: transparent !important;
     margin: 8px 0 !important;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .table-days span:hover {
-    color: #14426A;
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .table-days
+    span:hover {
+    color: #14426a;
 }
 
-.datepicker-container .datepicker-plot-area .datepicker-day-view .table-days .other-month {
-    color: #CFCDCD;
+.datepicker-container
+    .datepicker-plot-area
+    .datepicker-day-view
+    .table-days
+    .other-month {
+    color: #cfcdcd;
 }
 
 .upload_image .preview-profile-img {
@@ -515,12 +595,12 @@ h6 {
 .upload_image .upload-profile-wrapper label {
     padding: 5px 20px;
     font-size: 14px;
-    font-family: "IRANSans-Bold";
-    color: #4D585F;
+    font-family: 'IRANSans-Bold';
+    color: #4d585f;
     transition: all 0.2s linear;
     cursor: pointer;
     border-radius: 4px;
-    background: #D9D9D9;
+    background: #d9d9d9;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -540,8 +620,8 @@ h6 {
 }
 
 .AZ-styled-select::before {
-    content: "\e929";
-    font-family: "icomoon";
+    content: '\e929';
+    font-family: 'icomoon';
     position: absolute;
     left: 0;
     top: 50%;
@@ -558,10 +638,10 @@ h6 {
     left: 0;
     top: 0;
     background: transparent;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
     height: 100%;
     width: 100%;
-    color: #3C2669;
+    color: #3c2669;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -579,15 +659,15 @@ h6 {
 
 .AZ-tabs-wrapper .tab-link {
     font-size: 12px;
-    color: #74717B;
-    font-family: "IRANSans-Medium";
+    color: #74717b;
+    font-family: 'IRANSans-Medium';
     position: relative;
     padding: 5px !important;
     white-space: nowrap;
 }
 
 .AZ-tabs-wrapper .tab-link::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -601,7 +681,7 @@ h6 {
 }
 
 .AZ-tabs-wrapper .active .tab-link::after {
-    background: #643FAE;
+    background: #643fae;
 }
 
 .AZ-education-page .AZ-educational-tabs {
@@ -622,7 +702,7 @@ h6 {
 }
 
 .AZ-education-page .AZ-educational-tabs .tab-link {
-    background: #F6F3FC;
+    background: #f6f3fc;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 100%;
     color: #727070;
@@ -635,7 +715,7 @@ h6 {
 
 .AZ-education-page .AZ-educational-tabs .active .tab-link {
     color: #ffffff;
-    background: #643FAE;
+    background: #643fae;
 }
 
 .AZ-education-page .AZ-styled-select {
@@ -646,13 +726,13 @@ h6 {
 .AZ-education-page .page-header-title {
     font-size: 23px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     padding: 0 70px 0 30px;
 }
 
 .AZ-post-card {
     border-radius: 8px;
-    background: #F9F8FC;
+    background: #f9f8fc;
     padding: 8px;
     display: flex;
     flex-direction: column;
@@ -671,14 +751,14 @@ h6 {
 .AZ-post-card .post-card-title {
     font-size: 12px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     margin-bottom: 10px;
 }
 
 .AZ-post-card .post-card-text {
     font-size: 12px;
-    color: #4E475D;
-    font-family: "IRANSans-Bold";
+    color: #4e475d;
+    font-family: 'IRANSans-Bold';
     max-height: 105px !important;
     overflow: hidden;
     margin-bottom: 10px;
@@ -686,8 +766,8 @@ h6 {
 
 .AZ-post-card .read-more-btn {
     font-size: 10px;
-    color: #746DBA;
-    font-family: "IRANSans-Bold";
+    color: #746dba;
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-post-card .read-more-btn span {
@@ -714,7 +794,7 @@ h6 {
 .AZ-post-card-horizontal .post-horizontal-title {
     font-size: 15px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     margin-bottom: 6px;
 }
 
@@ -723,14 +803,14 @@ h6 {
 .AZ-post-card-horizontal .post-card-date,
 .AZ-post-card-horizontal .read-more-btn {
     font-size: 12px;
-    color: #746DBA;
-    font-family: "IRANSans-Bold";
+    color: #746dba;
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-post-card-horizontal .post-card-category {
     font-size: 13px;
-    color: #643FAE;
-    font-family: "IRANSans-Medium";
+    color: #643fae;
+    font-family: 'IRANSans-Medium';
     display: block;
     margin-bottom: 8px;
 }
@@ -738,7 +818,7 @@ h6 {
 .AZ-search-wrapper {
     border-radius: 5px;
     border: 1px solid rgba(71, 52, 243, 0.16);
-    background: #EBEBEE;
+    background: #ebebee;
     display: flex;
     align-items: center;
     height: 40px;
@@ -748,8 +828,8 @@ h6 {
 
 .AZ-search-wrapper input {
     font-size: 14px;
-    color: #7B7B7B;
-    font-family: "IRANSans-Medium";
+    color: #7b7b7b;
+    font-family: 'IRANSans-Medium';
     flex-grow: 2;
     height: 100%;
     background: transparent;
@@ -758,7 +838,7 @@ h6 {
 }
 
 .AZ-search-wrapper button {
-    color: #7B7B7B;
+    color: #7b7b7b;
     font-size: 20px;
     padding: 0 15px;
     background: transparent;
@@ -770,7 +850,7 @@ h6 {
     width: 40px;
     border-radius: 5px;
     border: 1px solid rgba(71, 52, 243, 0.16);
-    background: #EBEBEE;
+    background: #ebebee;
     color: #000000;
 }
 
@@ -782,7 +862,7 @@ h6 {
 .filter-canvas .offcanvas-title {
     font-size: 16px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 .offcanvas {
@@ -793,7 +873,7 @@ h6 {
 
 .AZ-workshop-card {
     border-radius: 7px;
-    background: #E1D8F4;
+    background: #e1d8f4;
     padding: 9px;
 }
 
@@ -810,41 +890,41 @@ h6 {
 .AZ-workshop-card .workshop-card-title {
     font-size: 17px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     margin: 5px 0;
 }
 
 .AZ-workshop-card .workshop-card-price {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-workshop-card .workshop-card-teacher {
     font-size: 14px;
-    color: #4F4F4F;
-    font-family: "IRANSans-Regular";
+    color: #4f4f4f;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-workshop-card .hashtag {
     font-size: 12px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
     pointer-events: none;
     padding: 4px 10px;
     position: relative;
     border-radius: 8px;
-    border: 1px solid #643FAE;
-    background: #F7F5FC;
+    border: 1px solid #643fae;
+    background: #f7f5fc;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .AZ-workshop-card .number-participants {
     font-size: 14px;
     color: #595561;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     border-radius: 5px;
-    background: #EEEBF4;
+    background: #eeebf4;
     padding: 5px 10px;
 }
 
@@ -856,11 +936,11 @@ h6 {
 
 .stars span {
     font-size: 10px;
-    color: #EC930D;
+    color: #ec930d;
 }
 
 .AZ-version-category {
-    background: #E1D8F4;
+    background: #e1d8f4;
     border-radius: 8px;
 }
 
@@ -871,18 +951,18 @@ h6 {
 .AZ-version-category .version-category-text {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .modal-wrapper .modal-content {
     border: 1px solid #695592;
-    background: #F8F7FA;
+    background: #f8f7fa;
 }
 
 .modal-wrapper .btn-close-modal {
     width: 23px;
     height: 23px;
-    background: #B2A2D0 !important;
+    background: #b2a2d0 !important;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -894,7 +974,7 @@ h6 {
 .modal-wrapper .modal-title {
     font-size: 19px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-faq-box {
@@ -908,18 +988,18 @@ h6 {
 .AZ-faq-box .faq-box-title {
     font-size: 13px;
     color: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-faq-box .faq-number {
     font-size: 13px;
-    color: #7B7B7B;
-    font-family: "IRANSans-Regular";
+    color: #7b7b7b;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-faq-box span {
     border-radius: 3px;
-    background: #6A4BA7;
+    background: #6a4ba7;
     width: 32px;
     height: 32px;
     font-size: 20px;
@@ -936,7 +1016,7 @@ h6 {
 .AZ-faq-list li {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
     list-style-type: disc;
     padding: 5px 0;
 }
@@ -954,14 +1034,14 @@ h6 {
 .AZ-product-card .product-card-name {
     font-size: 14px;
     color: #291550;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     margin-bottom: 5px;
 }
 
 .AZ-product-card .product-card-text {
     font-size: 12px;
     color: #827797;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .auto-slide .swiper-slide {
@@ -971,8 +1051,8 @@ h6 {
 .AZ-product-category {
     border-radius: 5px;
     font-size: 14px;
-    color: #234D2E;
-    font-family: "IRANSans-Medium";
+    color: #234d2e;
+    font-family: 'IRANSans-Medium';
     padding: 5px 8px;
     display: inline-block;
 }
@@ -1003,29 +1083,29 @@ h6 {
 
 .AZ-box {
     border-radius: 5px;
-    background: #EFEBF8;
+    background: #efebf8;
     padding: 18px;
 }
 
 .AZ-box .box-title {
     font-size: 20px;
     color: #372261;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     margin-bottom: 10px;
 }
 
 .AZ-box .box-text,
 .AZ-box .box-list {
     font-size: 15px;
-    color: #635A74;
-    font-family: "IRANSans-Regular";
+    color: #635a74;
+    font-family: 'IRANSans-Regular';
     margin-bottom: 10px;
 }
 
 .AZ-box .course-price {
     font-size: 18px;
     color: #372261;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-box .box-list {
@@ -1062,7 +1142,7 @@ h6 {
 .AZ-homepage .banner-img .banner-text {
     font-size: 12px;
     color: #000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .AZ-homepage .AZ-category-section .category-img {
@@ -1078,7 +1158,7 @@ h6 {
 .AZ-homepage .AZ-category-section .category-title {
     font-size: 13px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .AZ-homepage .notif-btn {
@@ -1089,7 +1169,7 @@ h6 {
 .AZ-homepage .credit {
     font-size: 18px;
     color: #000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-dashboard-page .dashboard-menu-list li {
@@ -1099,7 +1179,7 @@ h6 {
 
 .AZ-dashboard-page .profile-img {
     width: 52px;
-    background: #D9D9D9;
+    background: #d9d9d9;
     border-radius: 50%;
 }
 
@@ -1110,7 +1190,7 @@ h6 {
 .AZ-dashboard-page .dashboard-link {
     font-size: 16px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
     display: flex;
     align-items: center;
     gap: 20px;
@@ -1118,13 +1198,13 @@ h6 {
 
 .AZ-dashboard-page .dashboard-link span {
     font-size: 20px;
-    color: #4F4F4F;
+    color: #4f4f4f;
 }
 
 .AZ-dashboard-page .username {
     font-size: 18px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-dashboard-page .share-link {
@@ -1142,7 +1222,7 @@ h6 {
 
 .AZ-dashboard-page .share-link p {
     font-size: 12px;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
     color: rgba(61, 90, 128, 0.5);
     margin-bottom: 10px;
 }
@@ -1150,7 +1230,7 @@ h6 {
 .AZ-dashboard-page #link {
     align-self: center;
     font-size: 14px;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
     flex-grow: 2;
     border: none;
     text-align: left;
@@ -1169,7 +1249,7 @@ h6 {
 }
 
 .AZ-dashboard-page #copy span.copied::after {
-    content: "با موفقیت کپی شد";
+    content: 'با موفقیت کپی شد';
     position: absolute;
     top: 0px;
     right: 35px;
@@ -1178,9 +1258,9 @@ h6 {
     white-space: nowrap;
     padding: 2px 10px;
     font-size: 14px;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     color: #fff;
-    background-color: #522E99;
+    background-color: #522e99;
     opacity: 1;
     will-change: opacity, transform;
     animation: showcopied 1.5s ease;
@@ -1205,7 +1285,7 @@ h6 {
 .AZ-dashboard-page .copy-text {
     font-size: 12px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .AZ-login-page {
@@ -1214,25 +1294,25 @@ h6 {
 
 .AZ-login-page .login-info-title {
     font-size: 20px;
-    background: linear-gradient(169deg, #4734F3 48.25%, #4BDB72 92.15%);
+    background: linear-gradient(169deg, #4734f3 48.25%, #4bdb72 92.15%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-login-page .login-text {
     font-size: 13px;
-    color: #8C8AA3;
-    font-family: "IRANSans-Regular";
+    color: #8c8aa3;
+    font-family: 'IRANSans-Regular';
     margin-bottom: 10px;
 }
 
 .AZ-login-page .landing-title {
     font-size: 18px;
-    font-family: "IRANSans-Bold";
-    background: linear-gradient(180deg, #4734F3 0%, #4BDB72 100%);
+    font-family: 'IRANSans-Bold';
+    background: linear-gradient(180deg, #4734f3 0%, #4bdb72 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1240,20 +1320,20 @@ h6 {
 
 .AZ-login-page .login-title {
     font-size: 15px;
-    color: #261D78;
-    font-family: "IRANSans-Bold";
+    color: #261d78;
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-login-page .change-number {
     font-size: 15px;
-    color: #39A757;
-    font-family: "IRANSans-Regular";
+    color: #39a757;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-login-page .get-code-again {
     font-size: 11px;
-    color: #8772B0;
-    font-family: "IRANSans-Bold";
+    color: #8772b0;
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-login-page .number-code {
@@ -1265,8 +1345,8 @@ h6 {
 
 .AZ-login-page .code-input {
     font-size: 11px;
-    color: #7B7B7B;
-    font-family: "IRANSans-Regular";
+    color: #7b7b7b;
+    font-family: 'IRANSans-Regular';
     border-radius: 5px;
     border: 1px solid rgba(100, 63, 174, 0.16);
     text-align: center;
@@ -1279,7 +1359,7 @@ h6 {
 }
 
 .AZ-login-page .code-input.active {
-    border: 1px solid #643FAE;
+    border: 1px solid #643fae;
 }
 
 .AZ-admin-page {
@@ -1292,15 +1372,15 @@ h6 {
 }
 
 .AZ-admin-page .dashboard-box.green {
-    background: #D4E2DE;
+    background: #d4e2de;
 }
 
 .AZ-admin-page .dashboard-box.red {
-    background: #EBDFDF;
+    background: #ebdfdf;
 }
 
 .AZ-admin-page .dashboard-box.orange {
-    background: #F7E8D9;
+    background: #f7e8d9;
 }
 
 .AZ-admin-page .dashboard-box.purple {
@@ -1308,17 +1388,17 @@ h6 {
 }
 
 .AZ-admin-page .dashboard-box.yellow {
-    background: #FFF4CD;
+    background: #fff4cd;
 }
 
 .AZ-admin-page .dashboard-box.gold {
-    background: #ECE8DC;
+    background: #ece8dc;
 }
 
 .AZ-admin-page .dashboard-box-text {
     font-size: 16px;
     color: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-admin-page .dashboard-box-img {
@@ -1341,13 +1421,13 @@ h6 {
 
 .AZ-admin-page .dbox-text {
     font-size: 12px;
-    font-family: "IRANSans-Regular";
-    color: #2C1B50;
+    font-family: 'IRANSans-Regular';
+    color: #2c1b50;
 }
 
 .AZ-admin-page .dbox-details {
     font-size: 12px;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     color: #868092;
 }
 
@@ -1370,7 +1450,7 @@ h6 {
 .AZ-category-card .category-card-title {
     font-size: 14px;
     color: #291550;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     margin-bottom: 10px;
 }
 
@@ -1378,7 +1458,7 @@ h6 {
 .AZ-category-card .category-card-text {
     font-size: 14px;
     color: #827797;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-category-card .category-card-btn {
@@ -1390,7 +1470,7 @@ h6 {
 }
 
 .AZ-category-card:hover .category-card-title {
-    color: #643FAE;
+    color: #643fae;
 }
 
 .add-hashtag-group .tag-container {
@@ -1401,22 +1481,22 @@ h6 {
 .add-hashtag-group .tag {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     pointer-events: none;
     padding: 6px 6px 6px 25px;
     margin: 5px;
     position: relative;
     border-radius: 10px;
-    border: 2px solid #643FAE;
-    background: #F7F5FC;
+    border: 2px solid #643fae;
+    background: #f7f5fc;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .add-hashtag-group .tag::before {
     pointer-events: all;
     display: inline-block;
-    content: "\e92f";
-    font-family: "icomoon";
+    content: '\e92f';
+    font-family: 'icomoon';
     left: 0;
     position: absolute;
     height: 20px;
@@ -1449,28 +1529,28 @@ h6 {
 .AZ-product-page .product-name {
     font-size: 16px;
     color: #291550;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     display: block;
-    border-bottom: 1px solid #AAA8C5;
+    border-bottom: 1px solid #aaa8c5;
     padding-bottom: 20px;
     margin: 20px 0;
 }
 
 .AZ-product-page .product-details {
     font-size: 14px;
-    color: #2C1A50;
-    font-family: "IRANSans-Regular";
+    color: #2c1a50;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-product-page .swiper-pagination-bullet {
     width: 40px;
     height: 4px;
-    background: #ACA9B3;
+    background: #aca9b3;
     border-radius: 0;
 }
 
 .AZ-product-page .swiper-pagination-bullet-active {
-    background: #522E99;
+    background: #522e99;
 }
 
 .AZ-forum-list .forum-item-img {
@@ -1484,33 +1564,33 @@ h6 {
 
 .AZ-forum-list .forum-item-name {
     font-size: 16px;
-    color: #3A3752;
-    font-family: "IRANSans-Medium";
+    color: #3a3752;
+    font-family: 'IRANSans-Medium';
 }
 
 .AZ-forum-list .forum-item-time {
     font-size: 12px;
     color: #848298;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-forum-list .forum-item-time span {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #EC930D;
+    background: #ec930d;
 }
 
 .AZ-forum-list .forum-item-text {
     font-size: 12px;
-    color: #615C89;
-    font-family: "IRANSans-Medium";
+    color: #615c89;
+    font-family: 'IRANSans-Medium';
 }
 
 .AZ-file-page .file-title {
     font-size: 14px;
     color: #322450;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-file-page .file-tabContainer {
@@ -1522,14 +1602,14 @@ h6 {
 .AZ-file-page .file-details-title {
     font-size: 15px;
     color: #322450;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     margin-bottom: 20px;
 }
 
 .AZ-file-page .file-details-text {
     font-size: 13px;
     color: #322450;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     margin-bottom: 10px;
 }
 
@@ -1559,13 +1639,13 @@ h6 {
 .file-item .file-item-name {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     position: relative;
     padding-right: 10px;
 }
 
 .file-item .file-item-name::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     top: 50%;
@@ -1579,17 +1659,17 @@ h6 {
 .file-item .file-item-date {
     font-size: 12px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .file-item .file-item-date span {
-    color: #EC930D;
+    color: #ec930d;
 }
 
 .file-item .file-item-text {
     font-size: 14px;
-    color: #746DBA;
-    font-family: "IRANSans-Regular";
+    color: #746dba;
+    font-family: 'IRANSans-Regular';
 }
 
 .file {
@@ -1614,7 +1694,7 @@ h6 {
 }
 
 .file .file__value {
-    background-color: #643FAE;
+    background-color: #643fae;
     padding: 5px;
 }
 
@@ -1625,13 +1705,13 @@ h6 {
 }
 
 .file span {
-    color: #7B7B7B;
+    color: #7b7b7b;
     font-size: 22px;
 }
 
 .file .file__value--text {
     font-size: 13px;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     color: #fff;
 }
 
@@ -1640,7 +1720,7 @@ h6 {
     cursor: pointer;
     margin: 10px;
     font-size: 10px;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     color: gray;
 }
 
@@ -1648,15 +1728,15 @@ h6 {
     content: attr(data-text-btn);
     font-size: 12px;
     cursor: pointer;
-    font-family: "IRANSans-Regular";
-    color: #643FAE;
+    font-family: 'IRANSans-Regular';
+    color: #643fae;
     transition: all 0.2s linear;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     padding: 6px 25px;
-    background: #FFF;
+    background: #fff;
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
@@ -1671,8 +1751,8 @@ h6 {
 }
 
 .file .file__value:after {
-    content: "\e931";
-    font-family: "icomoon";
+    content: '\e931';
+    font-family: 'icomoon';
     cursor: pointer;
 }
 
@@ -1724,7 +1804,7 @@ h6 {
     left: 50%;
     transform: translateX(-50%);
     transition: 0.5s;
-    background-image: url("../img/Subtract.svg");
+    background-image: url('../img/Subtract.svg');
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -1742,8 +1822,8 @@ h6 {
 
 .AZ-download-page .file-details {
     font-size: 12px;
-    color: #7B7B7B;
-    font-family: "IRANSans-Medium";
+    color: #7b7b7b;
+    font-family: 'IRANSans-Medium';
 }
 
 .AZ-notif-page .notif-item {
@@ -1777,13 +1857,13 @@ h6 {
 .AZ-notif-page .notif-date {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-notif-page .notif-text {
     font-size: 14px;
-    color: #46414F;
-    font-family: "IRANSans-Regular";
+    color: #46414f;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-notif-page .notif-date {
@@ -1795,7 +1875,7 @@ h6 {
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: #643FAE;
+    background: #643fae;
 }
 
 .AZ-test-box {
@@ -1808,13 +1888,13 @@ h6 {
 .AZ-test-box .test-box-title {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     position: relative;
     padding-right: 10px;
 }
 
 .AZ-test-box .test-box-title::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 5px;
     height: 5px;
@@ -1826,8 +1906,8 @@ h6 {
 
 .AZ-test-box .test-box-details {
     font-size: 12px;
-    color: #6F687F;
-    font-family: "IRANSans-Regular";
+    color: #6f687f;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-research-page .header-btn {
@@ -1848,26 +1928,26 @@ h6 {
 
 .AZ-research-page .AZ-research-box .research-box-title {
     font-size: 14px;
-    color: #342F3F;
-    font-family: "IRANSans-Medium";
+    color: #342f3f;
+    font-family: 'IRANSans-Medium';
 }
 
 .AZ-research-page .AZ-research-box .research-box-text {
     font-size: 11px;
-    color: #5D5868;
-    font-family: "IRANSans-Regular";
+    color: #5d5868;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-research-page .AZ-research-box .research-box-details {
     font-size: 10px;
-    color: #5D5868;
-    font-family: "IRANSans-Regular";
+    color: #5d5868;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-research-page .research-details-title {
     font-size: 20px;
-    color: #342F3F;
-    font-family: "IRANSans-Regular";
+    color: #342f3f;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-research-page .author-profile {
@@ -1881,14 +1961,14 @@ h6 {
 
 .AZ-research-page .research-author {
     font-size: 13px;
-    color: #5D5868;
-    font-family: "IRANSans-Regular";
+    color: #5d5868;
+    font-family: 'IRANSans-Regular';
 }
 
 .details-disease-title {
     font-size: 16px;
     color: #332945;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 #reservationForm fieldset:not(:first-of-type),
@@ -1918,7 +1998,7 @@ canvas#horizontalBarChartCanvas {
 
 .single-chart .circle-bg {
     fill: #fff;
-    stroke: #F6F6F6;
+    stroke: #f6f6f6;
     stroke-width: 2;
 }
 
@@ -1937,34 +2017,34 @@ canvas#horizontalBarChartCanvas {
 
 .single-chart .percentage {
     fill: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     font-size: 8px;
     text-anchor: middle;
     color: #000000;
 }
 
 .single-chart.orange {
-    background: #FDE8E1;
+    background: #fde8e1;
 }
 
 .single-chart.orange .circle {
-    stroke: #EE450E;
+    stroke: #ee450e;
 }
 
 .single-chart.orange .icon-pin {
-    color: #EE450E;
+    color: #ee450e;
 }
 
 .single-chart.green {
-    background: #ECFAED;
+    background: #ecfaed;
 }
 
 .single-chart.green .circle {
-    stroke: #0EBC1F;
+    stroke: #0ebc1f;
 }
 
 .single-chart.green .icon-pin {
-    color: #0EBC1F;
+    color: #0ebc1f;
 }
 
 #progressbar {
@@ -1983,19 +2063,19 @@ canvas#horizontalBarChartCanvas {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #7B7B7B;
+    border: 1px solid #7b7b7b;
     border-radius: 50%;
-    border: 1px solid #CEC3E6;
+    border: 1px solid #cec3e6;
 }
 
 #progressbar .active {
-    background: #CEC3E6;
+    background: #cec3e6;
 }
 
 #progressbar p {
     font-size: 14px;
     color: #858585;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .sidebar {
@@ -2026,7 +2106,7 @@ canvas#horizontalBarChartCanvas {
 .message-box .chat__conversation-header .chat-username {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .message-box .chat__conversation-header .chat-profile {
@@ -2068,7 +2148,9 @@ canvas#horizontalBarChartCanvas {
     border-radius: 16px 16px 16px 0;
 }
 
-.message-box .chat__conversation-board__message-container.reversed .chat__conversation-board__message__context {
+.message-box
+    .chat__conversation-board__message-container.reversed
+    .chat__conversation-board__message__context {
     align-items: flex-end;
 }
 
@@ -2101,11 +2183,11 @@ canvas#horizontalBarChartCanvas {
     width: -moz-fit-content;
     width: fit-content;
     display: inline-table;
-    font-family: "IRANSans-Regular";
-    color: #FFFFFF;
+    font-family: 'IRANSans-Regular';
+    color: #ffffff;
     font-size: 12px;
     padding: 10px 20px 10px 40px;
-    background: #4734F3;
+    background: #4734f3;
     border-radius: 15px 15px 0 15px;
 }
 
@@ -2131,7 +2213,7 @@ canvas#horizontalBarChartCanvas {
 }
 
 .message-box .chat__conversation-panel__inner:focus-within {
-    border: 1px solid #3254CE;
+    border: 1px solid #3254ce;
 }
 
 .message-box .chat__conversation-panel__inner .chat__conversation-panel__input {
@@ -2140,8 +2222,8 @@ canvas#horizontalBarChartCanvas {
     background: transparent;
     border: 0;
     font-size: 14px;
-    font-family: "IRANSansXFaNum-Regular";
-    color: #4A4A4A;
+    font-family: 'IRANSansXFaNum-Regular';
+    color: #4a4a4a;
 }
 
 .message-box .chat__conversation-panel__inner .send-message-btn {
@@ -2153,8 +2235,11 @@ canvas#horizontalBarChartCanvas {
     justify-content: center;
 }
 
-.message-box .chat__conversation-panel__inner .send-message-btn:hover .icon-ri_send-plane-fill:before {
-    color: #3254CE;
+.message-box
+    .chat__conversation-panel__inner
+    .send-message-btn:hover
+    .icon-ri_send-plane-fill:before {
+    color: #3254ce;
 }
 
 .message-box .chat__conversation-panel__container {
@@ -2164,8 +2249,8 @@ canvas#horizontalBarChartCanvas {
 }
 
 .message-box .voice-message-button {
-    background: #F8F8F8;
-    border: 1px solid #4A4A4A;
+    background: #f8f8f8;
+    border: 1px solid #4a4a4a;
     border-radius: 16px;
     transition: all 0.2s linear;
     width: 48px;
@@ -2178,35 +2263,35 @@ canvas#horizontalBarChartCanvas {
 }
 
 .message-box .voice-message-button:hover {
-    background: #4A72FF;
-    border: 1px solid #4A72FF;
-    color: #FFFFFF;
+    background: #4a72ff;
+    border: 1px solid #4a72ff;
+    color: #ffffff;
 }
 
 .message-box .voice-message-button:hover .icon-ic_sharp-settings-voice:before {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .message-box .time_masage {
     font-size: 12px;
-    font-family: "IRANSans-Medium";
-    color: #7B7B7B;
+    font-family: 'IRANSans-Medium';
+    color: #7b7b7b;
     margin-top: 5px;
 }
 
 .message-box .file-download {
     width: 100%;
-    background: #4A72FF;
+    background: #4a72ff;
     border-radius: 16px;
     padding: 17px;
 }
 
 .message-box .file-download .download-btn {
     font-size: 14px;
-    font-family: "IRANSansXFaNum-Medium";
-    color: #FFFFFF;
+    font-family: 'IRANSansXFaNum-Medium';
+    color: #ffffff;
     padding: 12px 25px;
-    background: #394B89;
+    background: #394b89;
     border-radius: 11px;
     transition: all 0.2s linear;
     border: none;
@@ -2218,14 +2303,14 @@ canvas#horizontalBarChartCanvas {
 
 .message-box .file-download .file-download-name {
     font-size: 16px;
-    font-family: "IRANSansXFaNum-Medium";
-    color: #FFFFFF;
+    font-family: 'IRANSansXFaNum-Medium';
+    color: #ffffff;
 }
 
 .message-box .file-download .file-download-size {
     font-size: 12px;
-    font-family: "IRANSansXFaNum-Regular";
-    color: #FFFFFF;
+    font-family: 'IRANSansXFaNum-Regular';
+    color: #ffffff;
 }
 
 .message-box .file-download .icon-mdi_file-download {
@@ -2234,7 +2319,7 @@ canvas#horizontalBarChartCanvas {
 
 .message-box .voice {
     width: 100%;
-    background: #4A4A4A;
+    background: #4a4a4a;
     text-align: center;
     padding: 17px;
     display: flex;
@@ -2246,17 +2331,17 @@ canvas#horizontalBarChartCanvas {
 
 .message-box .voice .voice-title {
     font-size: 16px;
-    font-family: "IRANSansXFaNum-Medium";
-    color: #FFFFFF;
+    font-family: 'IRANSansXFaNum-Medium';
+    color: #ffffff;
 }
 
 .message-box .voice .voice-time {
     font-size: 12px;
-    font-family: "IRANSansXFaNum-Regular";
-    color: #FFFFFF;
+    font-family: 'IRANSansXFaNum-Regular';
+    color: #ffffff;
 }
 
-.message-box .voice input[type=range] {
+.message-box .voice input[type='range'] {
     -webkit-appearance: none !important;
     margin: 0px;
     padding: 0px;
@@ -2269,20 +2354,20 @@ canvas#horizontalBarChartCanvas {
     border-radius: 5px;
 }
 
-.message-box .voice input[type=range]::-ms-fill-lower {
+.message-box .voice input[type='range']::-ms-fill-lower {
     background: #777777;
 }
 
-.message-box .voice input[type=range]::-ms-fill-upper {
+.message-box .voice input[type='range']::-ms-fill-upper {
     background: #777777;
 }
 
-.message-box .voice input[type=range]::-moz-range-track {
+.message-box .voice input[type='range']::-moz-range-track {
     border: none;
     background: #777777;
 }
 
-.message-box .voice input[type=range]::-webkit-slider-thumb {
+.message-box .voice input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none !important;
     background: #fff;
     height: 15px;
@@ -2291,14 +2376,14 @@ canvas#horizontalBarChartCanvas {
     box-shadow: -100vw 0 0 100vw #f7d9b9;
 }
 
-.message-box .voice input[type=range]::-moz-range-thumb {
+.message-box .voice input[type='range']::-moz-range-thumb {
     background: #fff;
     height: 8px;
     width: 8px;
     border-radius: 100%;
 }
 
-.message-box .voice input[type=range]::-ms-thumb {
+.message-box .voice input[type='range']::-ms-thumb {
     -webkit-appearance: none !important;
     background: #fff;
     height: 8px;
@@ -2351,10 +2436,10 @@ canvas#horizontalBarChartCanvas {
 }
 
 .message-box .togglePlay:after {
-    content: "\e924";
+    content: '\e924';
     display: block;
     color: #fff;
-    font-family: "icomoon";
+    font-family: 'icomoon';
     font-size: 50px;
     width: 100%;
     height: 100%;
@@ -2368,7 +2453,7 @@ canvas#horizontalBarChartCanvas {
 }
 
 .message-box .togglePlay.active:after {
-    content: "\e92b";
+    content: '\e92b';
 }
 
 .js-remove--exam-row {
@@ -2389,21 +2474,21 @@ canvas#horizontalBarChartCanvas {
 
 .AZ-panel .test-date {
     font-size: 12px;
-    color: #6F687F;
-    font-family: "IRANSans-Regular";
+    color: #6f687f;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-panel .skill-tag {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     pointer-events: none;
     padding: 6px 15px;
     margin: 5px;
     position: relative;
     border-radius: 10px;
-    border: 2px solid #643FAE;
-    background: #F7F5FC;
+    border: 2px solid #643fae;
+    background: #f7f5fc;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -2419,7 +2504,7 @@ canvas#horizontalBarChartCanvas {
 .AZ-panel .expertise {
     font-size: 12px;
     color: #746496;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-panel .authentication-link {
@@ -2432,26 +2517,26 @@ canvas#horizontalBarChartCanvas {
 .AZ-panel .authentication-link p {
     font-size: 14px;
     color: #332945;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-panel .authentication-link .authentication-title {
     font-size: 10px;
-    color: #7B7B7B;
-    font-family: "IRANSans-Medium";
+    color: #7b7b7b;
+    font-family: 'IRANSans-Medium';
     margin-bottom: 5px;
 }
 
 .AZ-post-page .post-title {
     font-size: 22px;
     color: #000000;
-    font-feature-settings: "IRANSans-Regular";
+    font-feature-settings: 'IRANSans-Regular';
 }
 
 .AZ-post-page .post-details {
     font-size: 12px;
-    color: #7B7B7B;
-    font-family: "IRANSans-Regular";
+    color: #7b7b7b;
+    font-family: 'IRANSans-Regular';
 }
 
 .AZ-post-page .line {
@@ -2482,19 +2567,19 @@ canvas#horizontalBarChartCanvas {
 .comment-box .comment-text {
     font-size: 12px;
     color: #000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .comment-box .comment-name {
     font-size: 14px;
     color: #000;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
 }
 
 .comment-box .comment-date {
     font-size: 10px;
-    color: #7B7B7B;
-    font-family: "IRANSans-Regular";
+    color: #7b7b7b;
+    font-family: 'IRANSans-Regular';
 }
 
 .comment-box .like-btn {
@@ -2515,7 +2600,7 @@ canvas#horizontalBarChartCanvas {
 .pin-box .pin-box-title {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .pin-box .pin-btn {
@@ -2526,7 +2611,7 @@ canvas#horizontalBarChartCanvas {
 article h1 {
     font-size: 22px;
     color: #000000;
-    font-feature-settings: "IRANSans-Regular";
+    font-feature-settings: 'IRANSans-Regular';
     margin-bottom: 20px;
 }
 
@@ -2536,15 +2621,15 @@ article h4,
 article h5 {
     font-size: 18px;
     color: #000000;
-    font-feature-settings: "IRANSans-Regular";
+    font-feature-settings: 'IRANSans-Regular';
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
 article p {
     font-size: 14px;
-    color: #4E475D;
-    font-family: "IRANSans-Regular";
+    color: #4e475d;
+    font-family: 'IRANSans-Regular';
     margin-bottom: 10px;
 }
 
@@ -2559,7 +2644,7 @@ article img {
 
 .table-wrapper thead th {
     font-size: 14px;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
     color: #000000;
     padding: 10px 0;
 }
@@ -2582,30 +2667,30 @@ article img {
 
 .table-wrapper tbody td {
     font-size: 12px;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     color: #000000;
     padding: 10px 0;
 }
 
 .table-wrapper .score {
-    color: #3FA662;
+    color: #3fa662;
 }
 
 .increase-credit-btn {
     font-size: 16px;
-    color: #0C5B21;
-    font-family: "IRANSans-Medium";
+    color: #0c5b21;
+    font-family: 'IRANSans-Medium';
 }
 
 .increase-credit-btn span {
-    color: #33C85B;
+    color: #33c85b;
     font-size: 20px;
 }
 
 .quantity-field {
     min-width: 100%;
     height: 30px;
-    background: #F1F4F5;
+    background: #f1f4f5;
     border-radius: 8px;
     margin: 0 auto;
     overflow: hidden;
@@ -2636,7 +2721,7 @@ article img {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
     font-size: 12px;
     background: transparent;
 }
@@ -2678,7 +2763,7 @@ article img {
 #cont {
     width: 100%;
     position: relative;
-    background: #FCFCFC;
+    background: #fcfcfc;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -2688,14 +2773,14 @@ article img {
 
 .AZ-test-page .rate-qu {
     font-size: 10px;
-    color: #643FAE;
-    font-family: "IRANSans-Bold";
+    color: #643fae;
+    font-family: 'IRANSans-Bold';
 }
 
 .AZ-test-page .report-btn {
     font-size: 14px;
     color: #000000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .AZ-test-page .save-btn.active {
@@ -2711,13 +2796,13 @@ article img {
 .AZ-test-page .qu-number {
     font-size: 16px;
     color: #000000;
-    font-family: "IRANSans-Bold";
+    font-family: 'IRANSans-Bold';
 }
 
 #rating li {
     font-size: 14px;
     color: #000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
     display: none;
 }
 
@@ -2732,13 +2817,13 @@ article img {
 .scores-progress__title {
     font-size: 14px;
     color: #000;
-    font-family: "IRANSans-Medium";
+    font-family: 'IRANSans-Medium';
 }
 
 .amazing-offer-time {
     font-size: 14px;
     color: #fff;
-    font-family: "IRANSans-Regular";
+    font-family: 'IRANSans-Regular';
     border-radius: 4px;
     background: #695592;
     padding: 8px 15px;
@@ -2814,27 +2899,18 @@ article img {
     }
 }
 
-
-
-
-
-
 /* new styles */
 .border-green {
     border-color: #00ff89 !important;
 }
 
-
 .home-top-icons {
     display: flex;
 }
 
-
-
-
 .bottom-navber {
     border-radius: 16px 16px 0 0;
-    background: #E6E0F2;
+    background: #e6e0f2;
     position: fixed;
     z-index: 10;
     bottom: 0;
@@ -2851,7 +2927,7 @@ article img {
 
 .bottom-navber .sc-menu-item {
     font-size: 22px;
-    color: #3E3254;
+    color: #3e3254;
     flex-grow: 1;
     margin: auto;
     transition: 0.5s;
@@ -2866,7 +2942,7 @@ article img {
     transform: translateY(-18px);
     width: 85%;
     border-radius: 50%;
-    background: #643FAE;
+    background: #643fae;
     color: #fff;
     font-size: 20px;
     transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -2890,7 +2966,11 @@ li:has(.sc-menu-item.active) {
     left: 50%;
     transform: translateX(-50%);
     transition: 0.5s;
-    background-image: url("../img/Subtract.svg");
+    background-image: url('../img/Subtract.svg');
     background-repeat: no-repeat;
     background-position: center top;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
