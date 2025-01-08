@@ -43,6 +43,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'BaiJamjuree';
+    src: url('../fonts/BaiJamjuree/BaiJamjuree-Regular.ttf');
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;

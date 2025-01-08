@@ -133,7 +133,7 @@ const FileId = () => {
                                         >
                                             <div className="flex flex-col gap-2 text-[#373636]">
                                                 <div className="flex gap-1">
-                                                    <span>
+                                                    <span className="font-[BaiJamjuree] font-semibold">
                                                         {f.DrugName ?? ''}
                                                     </span>
                                                     <span className="flex gap-2">
