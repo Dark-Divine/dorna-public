@@ -61,6 +61,8 @@ import ExamSimulatorReview from './pages/exam/simulator/review'
 import WebinarTechById from './pages/tech/webinar'
 import ExamToggledQuestions from './pages/exam/toggle'
 import { ReactQueryProvider } from './providers/reactQueryProvider'
+import BottomNavigation from './components/share/BottomNavigation'
+import Chats from './pages/chat'
 
 export default function App() {
     return (
@@ -156,8 +158,9 @@ export default function App() {
                         <Route index element={<News />} />
                         <Route path=":id" element={<NewsById />} />
                     </Route>
-                    <Route path="/thread">
-                        <Route index element={<Thread />} />
+                    <Route path="/chat">
+                        <Route index element={<Chats />} />
+                        {/* <Route path=":id" element={<Chats />} /> */}
                     </Route>
                     <Route path="/profile">
                         <Route index element={<Profile />} />

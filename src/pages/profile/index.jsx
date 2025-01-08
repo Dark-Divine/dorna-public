@@ -2,8 +2,10 @@ import BottomNavigation from '../../components/share/BottomNavigation'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+
 import { Button, Modal, Sheet, Typography } from '@mui/joy'
 import { softLogoutLocalStorage } from '../../utils/logout'
+import userInfoImage from '../../assets/img/user-info.png'
 
 const Profile = () => {
     const [user, setUser] = useState()
@@ -62,7 +64,7 @@ const Profile = () => {
                                         src={
                                             user?.uploadphoto
                                                 ? `${process.env.REACT_APP_FILEMANAGER}${user?.uploadphoto}`
-                                                : '../../assets/img/user-info.png'
+                                                : userInfoImage
                                         }
                                         alt=""
                                     />

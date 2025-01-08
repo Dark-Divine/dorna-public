@@ -19,9 +19,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./*"]
-    }
   },
   "include": [
     "next-env.d.ts",
@@ -29,6 +26,6 @@
     "node_modules/@emotion/styled",
     "**/*.ts",
     "**/*.tsx"
-, "src/pages/profile/index.jsx"  ],
+  ],
   "exclude": ["node_modules"]
 }
