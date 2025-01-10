@@ -762,8 +762,6 @@ h6 {
 }
 
 .AZ-post-card .post-card-text {
-    font-size: 12px;
-    color: #4e475d;
     font-family: 'IRANSans-Bold';
     max-height: 105px !important;
     overflow: hidden;

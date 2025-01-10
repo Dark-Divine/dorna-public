@@ -1,14 +1,15 @@
 import HandlePreviousPageButton from '../../components/share/HandlePreviousPageButton'
-import { useGetTasks } from '../../hooks/chat/useFetchChats'
+import { useFetchChats } from '../../hooks/chat/useFetchChats'
+import ChatCard from '../../components/chat/chatCard'
+import BottomNavigation from '../../components/share/BottomNavigation'
 
 export default function Chats() {
     //panel.dorna-uni.ir/api/Doapi?func=Getshowchanel&apikey=4a2e82f3d1ec790edfef25a0895e481fab5ddd8d&show=1
 
-    const { data } = useGetTasks()
+    const { data: chatsData } = useFetchChats()
 
-    console.log(data)
     return (
-        <section className="AZ-page-container">
+        <section className="AZ-page-container font-[IRANSans-Regular]">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -18,10 +19,27 @@ export default function Chats() {
                             </h2>
                             <HandlePreviousPageButton />
                         </div>
-                        <div></div>
+                        <div class="AZ-search-wrapper">
+                            <button type="button">
+                                <span class="icon-search"></span>
+                            </button>
+                            <input
+                                type="search"
+                                placeholder="جستجو ..."
+                                onChange={(e) => handleSearchOnThreads(e)}
+                            />
+                        </div>
+                        <div class="col-lg-12 pl-0"></div>
+                        <div>
+                            {chatsData &&
+                                chatsData.map((item) => (
+                                    <ChatCard key={item.id} chat={item} />
+                                ))}
+                        </div>
                     </div>
                 </div>
             </div>
+            <BottomNavigation />
         </section>
     )
 }

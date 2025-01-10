@@ -27,7 +27,7 @@ const BottomNavigation = () => {
     const routes = [
         {
             key: 1,
-            url: '/thread',
+            url: '/chat',
             icon: 'mail',
         },
         {

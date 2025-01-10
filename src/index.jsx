@@ -63,6 +63,8 @@ import ExamToggledQuestions from './pages/exam/toggle'
 import { ReactQueryProvider } from './providers/reactQueryProvider'
 import BottomNavigation from './components/share/BottomNavigation'
 import Chats from './pages/chat'
+import SingleChatPage from './pages/chat/[...id]'
+import MainLayout from './components/layouts/mainLayout'
 
 export default function App() {
     return (
@@ -160,7 +162,7 @@ export default function App() {
                     </Route>
                     <Route path="/chat">
                         <Route index element={<Chats />} />
-                        {/* <Route path=":id" element={<Chats />} /> */}
+                        <Route path=":id" element={<SingleChatPage />} />
                     </Route>
                     <Route path="/profile">
                         <Route index element={<Profile />} />
@@ -195,6 +197,8 @@ export default function App() {
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <ReactQueryProvider>
-        <App />
+        <MainLayout>
+            <App />
+        </MainLayout>
     </ReactQueryProvider>
 )

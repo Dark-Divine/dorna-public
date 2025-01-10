@@ -1,37 +1,30 @@
-import {
-    Modal,
-    ModalContent,
-    ModalHeader,
-    ModalBody,
-    ModalFooter,
-    Button,
-    useDisclosure,
-    Tooltip,
-    Link,
-} from '@nextui-org/react'
+import { Button } from '@nextui-org/react'
 import userIcon from '../../../assets/img/user-invite-friend.png'
 import HandlePreviousPageButton from '../../../components/share/HandlePreviousPageButton'
 import toast from 'react-hot-toast'
 import { useState } from 'react'
-import { Icon } from '@iconify/react'
 
 const UserInvite = () => {
-    const { isOpen, onOpen, onOpenChange } = useDisclosure()
     const user_id = localStorage.getItem('user_id')
-
-    // const handleCopyText = () => {
-    //     var copyText = document.getElementById('link')
-    //     copyText.select()
-    //     copyText.setSelectionRange(0, 99999) // For mobile devices
-    //     navigator.clipboard.writeText(copyText.value)
-    //     // Alert the copied text
-    //     // alert("Copied the text: " + copyText.value);
-    // }
-
+    const handleShare = async () => {
+        let copyText = document.getElementById('link')
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: 'کد اشتراک‌ گذاری',
+                    text: `کد دعوت شما: ${copyText}`,
+                    url: 'https://example.com',
+                })
+            } catch (error) {
+                console.error('خطا در اشتراک‌ گذاری:', error)
+            }
+        } else {
+            alert('متاسفانه دستگاه شما از اشتراک‌گذاری پشتیبانی نمی‌کند.')
+        }
+    }
     const [disabled, setDisabled] = useState(false)
-
     const copyToClipboard = () => {
-        var copyText = document.getElementById('link')
+        let copyText = document.getElementById('link')
         if (disabled) return
         setDisabled(true)
         navigator.clipboard.writeText(copyText)
@@ -89,60 +82,11 @@ const UserInvite = () => {
                         <div className="d-flex align-items-center gap-2">
                             <>
                                 <Button
-                                    onPress={onOpen}
+                                    onPress={handleShare}
                                     className="AZ-primary-btn w-100 justify-content-center align-items-center d-flex"
                                 >
                                     دعوت از دوستان
                                 </Button>
-                                <Modal
-                                    isOpen={isOpen}
-                                    onOpenChange={onOpenChange}
-                                >
-                                    <ModalContent className="rounded-b-none rounded-t-md min-h-[70vh] font-[IRANSans-Regular] ">
-                                        {(onClose) => (
-                                            <>
-                                                <ModalHeader className="flex flex-col gap-1 font-[IRANSans-Regular]">
-                                                    اشتراک گذاری لینک دعوت
-                                                </ModalHeader>
-                                                <ModalBody>
-                                                    <a
-                                                        onClick={onClose}
-                                                        target="_blank"
-                                                        data-action="share/whatsapp/share"
-                                                        className="AZ-primary-btn w-100 justify-content-center align-items-center d-flex"
-                                                        href={`https://whatsapp://send?text=کد دعوت من: ${user_id}`}
-                                                    >
-                                                        اشتراک گذاری از طریق
-                                                        واتساپ
-                                                    </a>
-                                                    <a
-                                                        onClick={onClose}
-                                                        target="_blank"
-                                                        className="AZ-primary-btn w-100 justify-content-center align-items-center d-flex"
-                                                        href={`https://t.me/share/url?url=${`url`}&text=${`کد دعوت من: ${user_id}`}`}
-                                                    >
-                                                        اشتراک گذاری از طریق
-                                                        تلگرام
-                                                    </a>
-                                                    <button
-                                                        onClick={() => {
-                                                            onClose()
-                                                            copyToClipboard()
-                                                        }}
-                                                        className="AZ-primary-btn w-100 justify-center flex gap-2 items-center"
-                                                    >
-                                                        <Icon
-                                                            icon="solar:link-minimalistic-2-linear"
-                                                            className="w-5 h-5"
-                                                        />
-
-                                                        <span>کپی لینک</span>
-                                                    </button>
-                                                </ModalBody>
-                                            </>
-                                        )}
-                                    </ModalContent>
-                                </Modal>
                             </>
                         </div>
                     </div>
