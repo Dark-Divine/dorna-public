@@ -25,7 +25,9 @@
         "config/server/db/custom.d.ts",
         "node_modules/@emotion/styled",
         "**/*.ts",
-        "**/*.tsx"
+        "**/*.tsx",
+        "src/**/*.js",
+        "src/**/*.jsx"
     ],
     "exclude": ["node_modules", "src/**/*.js", "src/**/*.jsx"]
 }

@@ -3,7 +3,7 @@ import crudService from '../../utils/api'
 
 export const GET_INTRODUCER_ID = 'GET_INTRODUCER_ID'
 
-export const useGetintroducerid = (id: number) => {
+export const useGetintroducerid = (id) => {
     async function queryFn() {
         const res = await crudService.get(
             `api/doapi?func=Getintroducerid&apikey=${process.env.REACT_APP_API_KEY}&id=${id}`

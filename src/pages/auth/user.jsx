@@ -2,9 +2,15 @@ import userInformation from '../../assets/img/user-info.png'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import { useGetintroducerid } from '../../hooks/auth/useGetintroducerid'
+import toast from 'react-hot-toast'
 
 const UserInformation = () => {
     const navigate = useNavigate()
+    const user_id = localStorage.getItem('user_id')
+    const [code, setCode] = useState(null)
+    const { data: userCode } = useGetintroducerid(code)
+
     const [user, setUser] = useState({
         name: '',
         family: '',
@@ -17,10 +23,9 @@ const UserInformation = () => {
         Mobile: localStorage.getItem('mobile'),
         Registerdate: new Date().toLocaleDateString('en-US'),
     })
+
     const [dornaGift, setDornaGift] = useState()
     const [filename, setFilename] = useState()
-
-    const user_id = localStorage.getItem('user_id')
 
     useEffect(() => {
         const m = localStorage.getItem('mobile')
@@ -71,11 +76,6 @@ const UserInformation = () => {
             })
     }
 
-    const handleInviteCode = async () => {
-        // await axios.get(`${process.env.REACT_APP_API_GATEWAY}api/doupdateapi?func=uploaduserintroducer&introducerid=${user.introducerid}&apikey=${process.env.REACT_APP_API_KEY}&userid=${user_id}`)
-        //     .then(function (response) {
-        //     });
-    }
     const handleSendUsersGift = async (dornaG) => {
         if (!dornaG) return
         await axios
@@ -119,7 +119,19 @@ const UserInformation = () => {
 
     const handleUserInformation = async (e) => {
         e.preventDefault()
+
+        // console.log('user', user)
+        // setCode(Number(user.introducerid))
+        // console.log('e', e)
+        // console.log('data', userCode)
+
+        // if (userCode.length > 0) {
+        //     return
+        // } else {
+        //     toast.error('کد معرف وارد شده صحیح نمی باشد')
+        // }
         try {
+            // if()
             await insertCustomerInformation()
             // await handleInviteCode();
             await handleGiftDornaCoin()
@@ -138,13 +150,11 @@ const UserInformation = () => {
                     <div class="col-lg-12">
                         <form action="">
                             <h1 class="login-info-title text-center">
-                                {' '}
-                                حساب کاربری{' '}
+                                حساب کاربری
                             </h1>
                             <p class="login-text text-center">
-                                {' '}
                                 برای ورود به برنامه اطلاعات کاربری خود را وارد
-                                کنید.{' '}
+                                کنید.
                             </p>
                             <div class="upload_image d-flex align-items-center flex-column mb-5">
                                 <div class="position-relative">
@@ -273,7 +283,6 @@ const UserInformation = () => {
                                 class="AZ-primary-btn w-100"
                                 onClick={handleUserInformation}
                             >
-                                {' '}
                                 ورود به برنامه
                             </button>
                         </form>
